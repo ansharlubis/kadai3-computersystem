@@ -56,7 +56,7 @@ int main(){
 	sort(base, 4, compar_id);
 	printf("compare id\n");
 	for (int i = 0; i < 4; i++){
-		printf("%d:%d(id=%f)\n",i, base[i].id, base[i].height);
+		printf("%d:%d(id=%f)\n",i+1, base[i].id, base[i].height);
 	}
 	
 	printf("\n");
@@ -64,7 +64,7 @@ int main(){
 	sort(base, 4, compar_height);
 	printf("compare height\n");
 	for (int i = 0; i < 4; i++){
-		printf("%d:%d(id=%f)\n",i, base[i].id, base[i].height);
+		printf("%d:%d(id=%f)\n",i+1, base[i].id, base[i].height);
 	}
 
 	return 0;
