@@ -6,8 +6,13 @@ B:
 
 	.text
 main:
-	li $t0, 4
-	li $t1, 3
+	li $v0, 5
+	syscall
+	move $t0, $v0
+	li $v0, 5,
+	syscall
+	move $t1, $v0
+
 	sub $t2, $t0, $t1
 
 	slti $t3, $t2, 1
